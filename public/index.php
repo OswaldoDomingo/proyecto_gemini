@@ -16,40 +16,20 @@ echo "Hola desde Proyecto Gemini";
 </head>
 
 <body>
-    <div class="container">
         <header>
             <h1>Bienvenido a Proyecto Gemini</h1>
         </header>
-
+    <div class="container">
     <article class="item">
-      <h2>Introducción</h2>
-      <p>Este es el punto de entrada de la aplicación.</p>
+      <h2>Cuadrícula Grid</h2>
+      <p><a href="cuadriculagrid.php">Ver cuadrícula Grid</a></p>
     </article>
 
     <article class="item">
-      <h2>Artículo Destacado</h2>
-      <p>Este es un artículo destacado con un estilo especial.</p>
+      <h2>Cuadrícula flex</h2>
+      <p><a href="cuadriculaflex.php">Ver cuadrícula Flex</a></p>
     </article>
 
-    <article class="item">
-      <h2>Otro Artículo</h2>
-      <p>Más contenido de prueba para ver el salto de columnas.</p>
-    </article>
-
-    <article class="item">
-      <h2>Cuarto</h2>
-      <p>Rellena para comprobar 1→2→3 columnas.</p>
-    </article>
-
-    <article class="item">
-      <h2>Quinto</h2>
-      <p>Relleno.</p>
-    </article>
-
-    <article class="item">
-      <h2>Sexto</h2>
-      <p>Relleno.</p>
-    </article>
   </div>
 
         <footer>
