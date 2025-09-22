@@ -1,0 +1,47 @@
+body {
+    background-color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+ header, footer{
+      padding:16px 20px;
+      border-bottom:1px solid #222;
+    }
+    footer{ border-top:1px solid #222; border-bottom:none; }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+    /* 👉 ÍTEMS (por defecto 1 columna en <600px) */
+    .item{
+      flex:1 1 100%;
+      box-sizing:border-box;
+      background:#199;
+      border:1px solid #222;
+      border-radius:12px;
+      padding:16px;
+    }
+
+/* Pantallas medianas (≥ 600px): 2 columnas */
+@media (min-width: 600px) {
+  .item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Pantallas grandes (≥ 992px): 3 columnas */
+@media (min-width: 992px) {
+  .item {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
