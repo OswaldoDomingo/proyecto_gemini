@@ -1,0 +1,171 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  background-color: #1e3a8a; /* azul más amable a la vista */
+}
+
+/* Layout general: sticky footer */
+.contenedor{
+  display: grid;
+  grid-template-rows: auto 1fr auto;   /* header | main | footer */
+  min-height: 100dvh;                  /* ocupa toda la pantalla */
+  width: 100%;
+  background: #bdbdbd;
+  text-align: center;
+  /* Mejor outline que border para no alterar el cálculo del alto */
+  outline: 1px solid #222;
+}
+
+/* Header / Footer */
+.cabecera,
+.pie{
+  background: #199;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;           /* sin height fija -> más flexible */
+  border-radius: 12px;
+}
+
+/* Zona central con GRID (2 columnas en desktop) */
+.cuerpo{
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  align-items: center;                   /* centra verticalmente los hijos */
+  justify-items: center;                 /* centra horizontalmente los hijos */
+  gap: clamp(16px, 4vw, 48px);           /* separación fluida */
+  padding: clamp(16px, 4vw, 48px);
+  color: #fff;
+  background: #555;
+  border-radius: 12px;
+}
+
+/* Formulario */
+.contenedor-formulario{
+  width: 100%;
+  max-width: 420px;        /* tope cómodo */
+  text-align: left;        /* etiquetas a la izquierda */
+}
+
+/* Ajuste rápido de inputs */
+.contenedor-formulario input,
+.contenedor-formulario textarea{
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* Imagen responsive */
+.contenedor-imagen{
+  width: 100%;
+  max-width: 520px;
+}
+
+.contenedor-imagen img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive: 1 columna en pantallas pequeñas */
+@media (max-width: 900px){
+  .cuerpo{
+    grid-template-columns: 1fr;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  background-color: #1e3a8a; /* azul más amable a la vista */
+}
+
+/* Layout general: sticky footer */
+.contenedor{
+  display: grid;
+  grid-template-rows: auto 1fr auto;   /* header | main | footer */
+  min-height: 100dvh;                  /* ocupa toda la pantalla */
+  width: 100%;
+  background: #bdbdbd;
+  text-align: center;
+  /* Mejor outline que border para no alterar el cálculo del alto */
+  outline: 1px solid #222;
+}
+
+/* Header / Footer */
+.cabecera,
+.pie{
+  background: #199;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;           /* sin height fija -> más flexible */
+  border-radius: 12px;
+}
+
+/* Zona central con GRID (2 columnas en desktop) */
+.cuerpo{
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  align-items: center;                   /* centra verticalmente los hijos */
+  justify-items: center;                 /* centra horizontalmente los hijos */
+  gap: clamp(16px, 4vw, 48px);           /* separación fluida */
+  padding: clamp(16px, 4vw, 48px);
+  color: #fff;
+  background: #555;
+  border-radius: 12px;
+}
+
+/* Formulario */
+.contenedor-formulario{
+  width: 100%;
+  max-width: 420px;        /* tope cómodo */
+  text-align: left;        /* etiquetas a la izquierda */
+}
+
+/* Ajuste rápido de inputs */
+.contenedor-formulario input,
+.contenedor-formulario textarea{
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* Imagen responsive */
+.contenedor-imagen{
+  width: 100%;
+  max-width: 520px;
+}
+
+.contenedor-imagen img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.copyright{
+  background: #199;
+  color: #fff;
+  font-style: oblique;
+  font-weight: 400;
+}
+/* Responsive: 1 columna en pantallas pequeñas */
+@media (max-width: 900px){
+  .cuerpo{
+    grid-template-columns: 1fr;
+  }
+}
